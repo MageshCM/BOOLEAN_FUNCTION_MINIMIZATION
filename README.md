@@ -32,19 +32,40 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+ Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+```
+Developed by: Magesh C M 
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+RegisterNumber: 212223220053
+```
+module ex02(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
 
-Developed by: RegisterNumber:*/
-
-
+```
 **RTL realization**
 
 **Output:**
 
+![image](https://github.com/MageshCM/BOOLEAN_FUNCTION_MINIMIZATION/assets/164765537/53417b8f-9410-4fd2-aa6c-f89f40745b2c)
+
+**Truth Table**
+
+![image](https://github.com/MageshCM/BOOLEAN_FUNCTION_MINIMIZATION/assets/164765537/2193aec2-d646-42e0-b77f-78d44bc885bb)
+
 **RTL**
 
 **Timing Diagram**
+![image](https://github.com/MageshCM/BOOLEAN_FUNCTION_MINIMIZATION/assets/164765537/b935c535-7d1f-4e32-aae7-53545a9ff029)
 
 **Result:**
 
